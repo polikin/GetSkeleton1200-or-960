@@ -6,6 +6,8 @@
 
 @include responsive($responsive);
 
+$layout: 1200;
+
 /**
 * @tags: all others mixins, placeholder, variable
 * @use in: _project.scss
