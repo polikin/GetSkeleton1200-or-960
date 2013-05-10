@@ -3,21 +3,13 @@ GetSkeleton1200-or-960
 
 Sometimes the designer designs with the 960 grid and sometime with the 1200 grid . So, I decided to merge both grid into one single scss file. Then, you can call which grid you want with the $layout variable.
 
-#####Example
+#####Example | file: _core-functions.scss
 ---
-`@import "_responsive-grid";`
+`@import "_responsive-grid";`  
+`@include responsive($responsive);`
 
-`@import "_core-grid.scss";`
-
-`$layout: 960;`
-
-
-#####OR
-
-
-`@import "_responsive-grid";`
-
-`@include grid(960);`
+`$responsive: true;`  
+`$layout: 1200;`
 
 ---
 
@@ -46,19 +38,29 @@ Voilà! IE will use the 960 grid. Maybe you will have to adjust your styles (men
 
 `.is960 / .is1024 / .is1140`
 
-Ex:
-`.selector { font-size: 15px; }`
-`.is960, is1024, is1140 { font-size: 12px; }`
+Ex:  
+`.selector { font-size: 15px; }`  
+`.is960 .selector, is1024 .selector, .is1140 .selector { font-size: 12px; }`
 
 OR
 
 #####Mixin to use to fix your styles (SCSS)
 ------
 
-`.selector { `
-
-  `font-size:15px;`
-  
-  `@include ie-grid { font-size: 12px;``}`
-  
+`.selector {`  
+  `font-size:15px;`    
+  `@include ie-grid { font-size: 12px;``}`    
 `}`
+
+#####Enable & disable responsive (SCSS)
+------
+
+For X reasons, sometimes we don't have the budget to make the website responsive. So, you can still use the skeleton grid, but it will not be responsive.
+The only thing you need is the variable $responsive.
+
+true == load the grid with the media queries / false == load the base grid only
+
+**Note: The variable $responsive must be included before the $layout variable**
+
+`$responsive: true;`  
+`layout: 1200;`
