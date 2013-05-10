@@ -1,0 +1,7 @@
+/**
+* @tags: responsive grid || _resonsive-grid.scss || Skeleton 960 | Skeleton 1200
+* @use in: _project.scss
+*/
+@import "_responsive-grid";
+
+@include grid($layout);
