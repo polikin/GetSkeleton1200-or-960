@@ -2,11 +2,12 @@
 * @tags: responsive grid || _resonsive-grid.scss || Skeleton 960 | Skeleton 1200
 * @use in: _project.scss
 */
+
+$responsive:  true;
+$layout:      1200;
+
 @import "_responsive-grid";
-
 @include responsive($responsive);
-
-$layout: 1200;
 
 /**
 * @tags: all others mixins, placeholder, variable
