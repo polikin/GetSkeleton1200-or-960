@@ -12,7 +12,7 @@ Sometimes the designer designs with the 960 grid and sometime with the 1200 grid
 `$layout: 960;`
 
 
-OR
+#####OR
 
 
 `@import "_responsive-grid";`
