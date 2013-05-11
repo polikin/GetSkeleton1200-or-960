@@ -34,16 +34,6 @@ Voilà! IE will use the 960 grid. Maybe you will have to adjust your styles (men
 
 ------
 
-#####Class to use to fix your styles (CSS)
-
-`.is960 / .is1024 / .is1140`
-
-Ex:  
-`.selector { font-size: 15px; }`  
-`.is960 .selector, is1024 .selector, .is1140 .selector { font-size: 12px; }`
-
-OR
-
 #####Mixin to use to fix your styles (SCSS)
 ------
 
