@@ -93,3 +93,15 @@
 
 /*****************/
 
+/*  =========
+  IE responsive grid fix
+=========
+*/
+
+@mixin ie-grid {
+	.is960 &,
+	.is1024 &,
+	.is1140 & {
+		@content;
+	}
+}
