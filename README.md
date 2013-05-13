@@ -54,3 +54,9 @@ true == load the grid with the media queries / false == load the base grid only
 
 `$responsive: true;`  
 `layout: 1200;`
+
+
+#####Tips
+------
+
+Wrap your content into `<div class="wrapper"></div>`
