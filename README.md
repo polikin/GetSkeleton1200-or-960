@@ -51,10 +51,25 @@ The only thing you need is the variable $responsive.
 
 true == load the grid with the media queries / false == load the base grid only
 
-**Note: The variable $responsive must be included before the $layout variable**
+######**Note: The variable $responsive must be included before the $layout variable**
 
 `$responsive: true;`  
 `layout: 1200;`
+
+#####Variables
+------
+
+$responsive: true, false, fluid
+$layout: 960, 1200, fluid
+
+`true:   enable responsive grid`    
+`false:  enable base grid only (without medias queries)`    
+`fluid:  enable percentage grid` (responsify || http://app.responsify.it/)
+
+layout:   
+960:   width 960    
+1200:  width 1200    
+fluid: percentage grid
 
 
 #####Tips
