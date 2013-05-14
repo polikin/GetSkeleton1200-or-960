@@ -66,10 +66,11 @@ $layout: 960, 1200, fluid
 `false:  enable base grid only (without medias queries)`    
 `fluid:  enable percentage grid` (responsify || http://app.responsify.it/)
 
-layout:   
-960:   width 960    
-1200:  width 1200    
-fluid: percentage grid
+#####Layout
+------
+`960:   width 960`    
+`1200:  width 1200`    
+`fluid: percentage grid`
 
 
 #####Tips
