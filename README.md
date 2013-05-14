@@ -28,7 +28,8 @@ Why? Because, we can use some .js file like [css3-mediaqueries-js](https://githu
  `<script src="//rezitech.github.com/syze/syze.min.js"></script>`
 
 then 
-`syze.sizes(320, 480, 760, 960, 1024, 1130, 1180).names({ 320:'320', 480:'480', 760:'768', 960:'960', 1024:'1024', 1130:'1140', 1180:'1200' });`
+`syze.sizes(320, 480, 760, 960, 1024, 1130, 1180).names({ 320:'320', 480:'480', 760:'768', 960:'960',`
+`1024:'1024', 1130:'1140', 1180:'1200' });`
 
 Voilà! IE will use the 960 grid. Maybe you will have to adjust your styles (menu, h1, h2, etc) to fit into this grid.
 
