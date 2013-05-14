@@ -59,7 +59,7 @@ true == load the grid with the media queries / false == load the base grid only
 #####Variables
 ------
 
-$responsive: true, false, fluid
+$responsive: true, false, fluid    
 $layout: 960, 1200, fluid
 
 `true:   enable responsive grid`    
